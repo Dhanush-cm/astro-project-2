@@ -1,0 +1,46 @@
+.banner {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .background {
+    background-image: url('/path-to-your-background-image.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .overlay {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    transform: skewY(-10deg);
+    opacity: 0.9;
+  }
+  
+  .overlay-green {
+    background-color: #00bfa6;
+    top: 40px;
+    z-index: 1;
+  }
+  
+  .overlay-orange {
+    background-color: #ff7043;
+    top: 60px;
+    z-index: 2;
+  }
+  
+  .overlay-teal {
+    background-color: #00b8d4;
+    top: 80px;
+    z-index: 3;
+  }
+  
